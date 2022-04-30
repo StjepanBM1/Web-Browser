@@ -1,13 +1,14 @@
+CC = mcs
 
-CC=mcs
-
-all: cs run
+all: cs run clean
 
 cs:
-	@$(CC) main.cs
+	@$(CC) src/main.cs src/GUI.cs src/Terminal.cs
 
 run:
-	@mono main.exe
+	@mono src/main.exe
 	
 clean:
-	rm -rf *.exe
+	@cd src
+	@rm -rf *.exe
+	@cd ../

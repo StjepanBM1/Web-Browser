@@ -7,6 +7,7 @@ namespace exerci
         public static void StartGUI()
         {
             Console.WriteLine("Starting GUI...");
+            GUI();
         }
 
         private static void GUI()

@@ -1,13 +1,12 @@
 
 # EXERCI
 
-Exerci is a ringwormGO Gen-X Web browser, made in C#. 
+Exerci is a ringwormGO Gen-X web browser, made in C#. 
 
 ## Version -> 0.0.2
 
 ## Required software
-
-1. Mono
+* Mono
 
 ## How to run
 ```

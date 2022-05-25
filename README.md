@@ -14,7 +14,7 @@ $ make
 $ mono main.exe
 ```
 
-## How to run (Go)
+## How to run (Java)
 ```
 $ java main.java
 ```

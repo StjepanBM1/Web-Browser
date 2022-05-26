@@ -6,7 +6,8 @@ Exerci is a ringwormGO Gen-X web browser, made in C# (for terminal version) & Ja
 ## Version -> 0.0.2
 
 ## Required software
-* Mono
+* Mono (Terminal version, can be compiled with .NET too)
+* Java (GUI version)
 
 ## How to run (C#)
 ```

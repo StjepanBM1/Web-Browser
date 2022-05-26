@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace exerci
 {
@@ -6,7 +6,7 @@ namespace exerci
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Exerci 0.0.2 - Terminal version | © 2022 ringwormGO");
+            Console.WriteLine("Exerci 0.0.3 - Terminal version | © 2022 ringwormGO");
             TerminalStart.StartTerminal();
         }
     }

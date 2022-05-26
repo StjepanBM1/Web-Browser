@@ -1,14 +1,24 @@
-CC = mcs
+DOTNET = dotnet
+MCS = mcs
 
-all: cs run clean
+all: dotnet
+mono: copy cs run
+
+dotnet:
+	@$(DOTNET) run --project src
+	rm -rf src/bin
+
+clean:
+	rm -rf mono
+
+copy:
+	rm -rf mono
+	@mkdir mono
+	@cp src/Program.cs mono/Program.cs
+	@cp src/Terminal.cs mono/Terminal.cs
 
 cs:
-	@$(CC) src/main.cs src/Terminal.cs
+	@$(MCS) mono/Program.cs mono/Terminal.cs
 
 run:
-	@mono src/main.exe
-	
-clean:
-	@cd src
-	@rm -rf *.exe
-	@cd ../
+	@mono mono/Program.exe

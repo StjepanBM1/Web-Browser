@@ -1,5 +1,11 @@
-clear
-mcs src/main.cs src/GUI.cs src/Terminal.cs
-clear
-mono src/main.exe
-del src/main.exe
+if ($($args[0]) -eq "mono")
+{
+    Write-Output "Mono"
+    make mono # Install Makefile support for windows
+}
+
+else
+{
+    Write-Output ".NET 5"
+    make # Install Makefile support for windows
+}
